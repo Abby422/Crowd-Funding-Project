@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+}
+.app-header-container{
+    background-image: url('./images/image-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+.app-navSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.desktop-nav{
+    display: none;
+}
+.app-body-container{
+    background-color: hsl(0, 0%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-content-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product-description-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    bottom: 30px;
+}
+.product-logo{
+    position: relative;
+    bottom: 25px;
+}
+.product-name p{
+    color: hsl(0, 0%, 48%);
+    font-size: 16px;
+}
+
+.product-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    margin: 10%;
+}
+
+.button-project{
+    background-color: hsl(176, 50%, 47%);
+    border: 1px solid hsl(176, 50%, 47%);
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    padding: 15px 30px;
+    margin-left: 30px;
+}
+
+.button-project:hover{
+    background-color: hsl(176, 72%, 28%);
+    border: 1px solid hsl(176, 72%, 28%);
+}
+.button-bookmark{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid hsl(233, 233, 233);
+    border-radius: 30px;
+    color: hsl(0, 0%, 48%);
+    margin-right: 30px;
+}
+
+.button-bookmark p{
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.progress-bar-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    margin: 10px;
+    padding: 10px;
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.progress-bar-numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin: 5% 1%;
+}
+
+.progress-bar-number{
+    padding-left: 5%;
+    border-left: 1px solid hsl(0, 0%, 48%);
+}
+
+.progress-bar{
+    width: 50vw;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar .progress{
+    height: 15px;
+    width: 45vw;
+    background-color: hsl(0, 0%, 97%);
+    border-radius: 20px;
+}
+
+.progress-bar .progress .progress-line{
+    height: 15px;
+    width: 37vw;
+    border-radius: 20px;
+    background-color: hsl(176, 50%, 47%);
+}
+.product-details-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    margin: 10px;
+    padding: 1% 4%;
+    border-radius: 10px;
+    width: 50vw;
+}
+
+.product-paragraph{
+    padding-top: 3%;
+    color: hsl(0, 0%, 48%);
+}
+
+.product-pledge{
+    width: 90%;
+    border: 1px solid hsl(0, 0%, 48%);
+    margin-top: 30px;
+    padding: 10px;
+}
+.product-pledge-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.product-pledge-header h4{
+    color: hsl(176, 50%, 47%);
+}
+
+.product-pledge-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.pledge-footer{
+    display: flex;
+    align-items: baseline;
+    padding-right: 20px;
+}
+.buttonProject{
+    background-color: hsl(176, 50%, 47%);
+    border: 1px solid hsl(176, 50%, 47%);
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 30px 10px 30px;
+}
+.buttonProject:hover{
+    background-color: hsl(176, 72%, 28%);
+    border: 1px solid hsl(176, 72%, 28%);
+}
+@media only screen and (min-width: 768px) {
+    .app-header-container{
+        background-image: url('./images/image-hero-desktop.jpg');
+    }
+    .app-navSection{
+        justify-content: space-around;
+    }
+    .hamburger-nav{
+        display: none;
+    }
+    .desktop-nav{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        list-style: none;
+    }
+    .desktop-nav li{
+        padding-left: 20px;
+    }
+
+}
